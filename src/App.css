@@ -1,0 +1,559 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+div#myimg-edit.myimg{
+ display: flex;
+ justify-content: center;
+ padding: 5px;
+ 
+
+}
+
+/* General Section Styling */
+.exp-sec {
+  background-color: #0f0d0d;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(242, 237, 237, 0.492);
+  padding: 30px;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 850px;
+  text-align: center;
+  position: relative;
+  top: 500px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Default shadow */
+  transition: all 0.3s ease; 
+}
+.exp-sec:hover{
+  box-shadow: 5px 5px 20px rgba(128, 128, 128, 0.5); /* Ash grey light effect */
+  transform: translateY(-5px);
+}
+#imgui {
+  position: absolute; /* Positions the image relative to its nearest positioned parent */
+  top: -100px; /* Moves the image up by 100px */
+  left: 50%; /* Centers the image horizontally */
+  transform: translateX(-50%); /* Ensures the image is perfectly centered */
+  z-index: 10; /* Ensures it stays above other content */
+}
+
+/* Header Styling */
+.timeline-header {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fefefe;
+  margin-bottom: 20px;
+}
+.expfull{
+  position: relative;
+  top: -100px;
+  /* z-index: -1; */
+}
+
+
+/* Timeline Container */
+.timeline {
+  position: relative;
+  
+  padding: 20px 0;
+  height: 500px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Default shadow */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+.timeline:hover{
+
+  transform: translateY(-5px);
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background: #f7f4e056;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+/* Timeline Items */
+.timeline-item {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px 0;
+  position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  background: #ffd105;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+/* Timeline Date */
+.timeline-date {
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #fffefe;
+}
+
+/* Timeline Content */
+.timeline-content {
+  width: 50%;
+  background: #fefefe;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.timeline-content h3 {
+  margin: 0 0 5px;
+  color: #333;
+}
+
+.timeline-content p {
+  margin: 0;
+  color: #666;
+}
+
+/* Portfolio Container */
+.portfolio-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #f1c40f;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #b3b3b3;
+}
+
+/* Section */
+
+
+.section h2 {
+  border-bottom: 2px solid #f1c40f;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  display: flex;
+  justify-self: center;
+}
+
+/* Skills Section */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skill {
+  width: 48%;
+  margin-bottom: 1rem;
+}
+
+.skill h3 {
+  font-size: 1.4rem;
+  color: #f39c12;
+}
+
+.skill ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill li {
+  margin-bottom: 0.5rem;
+}
+
+.skillicon img{
+  width: 120px;
+  margin-top: 10px;
+}
+
+/* Experience Section */
+.section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section li {
+  margin-bottom: 1rem;
+}
+
+.section li strong {
+  color: #f39c12;
+}
+.card-bg-achievement{
+  position: relative;
+  top: -150px;
+}
+.works{
+  font-size: 25px;
+}
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  margin-top: 3rem;
+  background: #1e1e1e;
+  color: #b3b3b3;
+  border-top: 1px solid #333;
+}
+
+.footer p {
+  margin: 0.5rem 0;
+}
+
+.social-icons {
+  font-size: 1.2rem;
+}
+
+.social-icons svg {
+  margin: 0 10px;
+  cursor: pointer;
+  color: #f39c12;
+  transition: color 0.3s ease;
+}
+
+.social-icons svg:hover {
+  color: #f1c40f;
+}
+
+/* Links */
+a {
+  color: #f1c40f;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffeb3b;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .skills {
+    flex-direction: column;
+  }
+
+  .skill {
+    width: 100%;
+  }
+}
+
+/* Center the div and apply padding */
+div#myimg-edit.myimg {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  
+  /* Apply fade-in animation */
+  animation: fadeIn 2s ease-in; /* Adjust duration as needed */
+}
+
+/* Define the fadeIn keyframes */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Styling for the image */
+#myimg-edit img {
+  border-radius: 50%; /* Circular image */
+  width: 150px; /* Width of the image */
+  height: 150px; /* Height of the image */
+  object-fit: cover; /* Ensures the image fits the circle without distortion */
+}
+
+.uiux-img{
+  width: 300px;
+  height: 200px;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+
+
+}
+.aboutme{
+  text-align: center;
+}
+.uiux-clipart {
+  opacity: 40%;
+  display: flex;
+  justify-self: center;
+  position: relative; /* Change to absolute positioning */
+  top: -250px;
+  z-index: -1; /* Send the element behind other elements */
+  
+}
+h2{
+  margin:0px;
+}
+p{
+  margin: 0px;
+}
+
+.card-bg {
+  background-color: #00000087;
+  border: 1px solid black;
+  border-radius: 10px;
+  opacity: 80%;
+  width: 850px;
+  height: 180px;
+  text-align: center;
+  justify-self: center;
+  padding: 12px;
+  z-index: 1; /* Ensure the element is on top */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Default shadow */
+  transition: all 0.3s ease; /* Smooth transition */
+  
+}
+
+.card-bg:hover {
+  box-shadow: 5px 5px 20px rgba(128, 128, 128, 0.5); /* Ash grey light effect */
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.education-section {
+  position: relative;
+  top: -400px;; /* Remove top: -400px to prevent the section from going out of view */
+  z-index: 0; /* Ensure it stays above other content */
+  transition: all 0.3s ease; /* Ensure smooth hover transition */
+}
+
+.education-section:hover {
+  box-shadow: 5px 5px 20px rgba(128, 128, 128, 0.5); /* Ash grey light effect */
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.aboutme-brief {
+  width: 700px;
+  margin-top: 15px;
+  justify-self: center;
+}
+.skill-bg{
+  position: relative;
+  top: -300px;
+}
+
+.skill-section-bg {
+  background-color: #00000087;
+  border: 1px solid black;
+  border-radius: 10px;
+  opacity: 80%;
+  width: 850px;
+  height: 480px;
+  text-align: center;
+  justify-self: center;
+  padding: 16px;
+   /* Ensure the element is on top */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Default shadow */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+.skill-section-bg:hover {
+  box-shadow: 5px 5px 20px rgba(128, 128, 128, 0.5); /* Ash grey light effect */
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+
+.tech-skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 40px; /* Space between logos */
+  justify-items: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  padding: 20px;
+}
+
+.tech-logo:last-child { 
+  grid-column: 2; /* Center the last logo in the 2nd column */
+}
+
+.tech-logo img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.tech-logo img:hover {
+  transform: scale(1.1);
+}
+
+
+.tech-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Prevent distortion of logos */
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.skill ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.skill li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.uiux-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.Skill-icon {
+display: flex;
+justify-self: center;
+  /* align-items: center;  */
+  position: relative;
+  top: -10px;
+  animation: fadeIn 1.5s ease-in-out; /* Fade-in Animation */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.uiuxpc {
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  height: 100%; /* Ensure the container has height for vertical centering */
+  position: relative;
+  top: -100px;
+  left: -100px;
+}
+
+
+.Skill-icon img{
+  
+  justify-self: center;
+  align-items: center;
+  width: 200px; 
+  height: auto;
+  opacity: 0; 
+  animation: fadeScaleIn 1.5s forwards; /* Image fade-in and scale */
+}
+
+.Skill-icon img:hover {
+  transform: scale(1.1); /* Slight scale-up on hover */
+  /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); Smooth shadow */
+}
+
+/* Keyframes for Fade-in and Scale Effect */
+@keyframes fadeScaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Background Fade-in for the Container */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .skills {
+    flex-direction: column;
+  }
+  .skill {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .skills {
+    flex-direction: column;
+  }
+
+  .skill {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+  }
+}
